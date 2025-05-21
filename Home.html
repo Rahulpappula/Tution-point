@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tuition Point</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #003366;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #0055aa;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 2rem;
+    }
+    .services, .fees, .contact {
+      background: white;
+      margin: 1rem auto;
+      max-width: 800px;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 0.75rem 1.5rem;
+      background: #0055aa;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #003366;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      padding: 1rem;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+    .whatsapp-float:hover {
+      background-color: #128C7E;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tuition Point</h1>
+    <p>Empowering Students for a Better Future</p>
+  </header>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#fees">Fees</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Math, Science, and English Tuition for Grades 6–12</li>
+      <li>Experienced and Qualified Tutors</li>
+      <li>Online and Offline Classes</li>
+      <li>Flexible Timings and Personalized Learning Plans</li>
+    </ul>
+  </section>
+
+  <section id="fees" class="fees">
+    <h2>Fee Structure</h2>
+    <table>
+      <tr>
+        <th>Class</th>
+        <th>Monthly Fee</th>
+      </tr>
+      <tr>
+        <td>1st - 4th</td>
+        <td>Rs. 4000</td>
+      </tr>
+      <tr>
+        <td>5th - 8th</td>
+        <td>Rs. 5500</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> <a href="tel:9948871125">9948871125</a></p>
+    <p><strong>Email:</strong> tuitionpoint@example.com</p>
+    <p><strong>Address:</strong> 123, Learning Street, Hyderabad, Telangana</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/919948871125" target="_blank">Chat on WhatsApp</a></p>
+
+    <form onsubmit="submitForm(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Tuition Point. All rights reserved.
+  </footer>
+
+  <a href="https://wa.me/919948871125" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+    Chat on WhatsApp
+  </a>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you! We'll get in touch soon.");
+      document.querySelector("form").reset();
+    }
+  </script>
+</body>
+</html>

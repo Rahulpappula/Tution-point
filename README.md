@@ -1,2 +1,0 @@
-# Tution-point
-For work
